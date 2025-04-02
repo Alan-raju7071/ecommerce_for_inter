@@ -1,4 +1,5 @@
 import 'package:ecommerce_for_inter/controller/Apicontroller/Apicontroller.dart';
+import 'package:ecommerce_for_inter/view/ontap/ontap.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -71,6 +72,7 @@ class _categorydetailsState extends State<categorydetails> {
                         child: Stack(
                           children: [ InkWell(
                             onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => Ontapscreen(),));
                               
                             },
                             child: Container(
